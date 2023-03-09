@@ -17,7 +17,7 @@ export default function SiteComponent({ site }: { site: Site }) {
       whileTap={{ scale: 0.95 }}
       className="rounded-xl py-8 px-8 border border-black group"
     >
-      <Link href={site.url}>
+      <Link target="_blank" href={site.url}>
         <div key={site.name} className="font-header tracking-wider flex flex-col gap-2 text-white">
           <h2 className="pb-2 text-xl font-bold ">{site.name}</h2>
           <Image
