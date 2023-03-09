@@ -4,6 +4,7 @@ import sites from "@/data/sites";
 import { Site } from "@/models/sites";
 import Link from "next/link";
 import SiteComponent from "@/components/Site.component";
+import Hero from "@/components/Hero.component";
 
 export default function Home() {
   return (
@@ -16,14 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`bg-black`}>
-        <div>
-          <h1 className="text-5xl text-white font-bold text-center pt-20 ">
-          School Portfolio
-          </h1>
-          <h2 className="pt-5 text-xl text-white font-bold text-center">
-          by Magnus Pladsen
-          </h2>
-        </div>
+        <Hero title="School Portfolio" subtitle="by Magnus Pladsen" />
         <div className="py-20 mx-auto items-center flex flex-col gap-20">
           {Object.values(sites).map((site: Site) => (
             <SiteComponent site={site} key={site.name} />
