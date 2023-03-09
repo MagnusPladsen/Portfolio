@@ -11,9 +11,10 @@ export default function SiteComponent({ site }: { site: Site }) {
       transition={{
         type: "spring",
         damping: 10,
-        stiffness: 100,
+        stiffness: 125,
         duration: 0.1,
       }}
+      whileTap={{ scale: 0.95 }}
       className="rounded-xl py-8 px-8 border border-black group"
     >
       <Link href={site.url}>
