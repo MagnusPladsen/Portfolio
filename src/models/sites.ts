@@ -1,6 +1,7 @@
 interface Site {
   name: string;
   url: string;
+  repoUrl: string;
   description: string;
   image: string;
   stack: string[];
