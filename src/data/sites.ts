@@ -6,7 +6,7 @@ const sites: Sites = {
     name: "GameHub",
     url: "https://gamehub.pladsen.dev",
     description: "Website for buying new and used games",
-    image: "/images/gameHub.PNG",
+    image: "/images/gameHub.png",
     stack: ["HTML", "CSS", "JavaScript", "WordPress API"],
   },
   2: {
