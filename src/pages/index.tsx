@@ -14,10 +14,10 @@ export default function Home() {
         <meta name="description" content="Portfolio of school projects" />
         <meta name="author" content="Magnus Pladsen" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <main className={`bg-black`}>
-        <Hero title="School Portfolio" subtitle="by Magnus Pladsen" />
+        <Hero title="School Portfolio" author="Magnus Pladsen" />
         <div className="py-20 mx-auto items-center flex flex-col gap-20">
           {Object.values(sites).map((site: Site) => (
             <SiteComponent site={site} key={site.name} />
