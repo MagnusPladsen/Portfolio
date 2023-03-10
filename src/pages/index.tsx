@@ -3,8 +3,8 @@ import Image from "next/image";
 import sites from "@/data/sites";
 import { Site } from "@/models/sites";
 import Link from "next/link";
-import SiteComponent from "@/components/Site.component";
-import Hero from "@/components/Hero.component";
+import SiteComponent from "@/components/site/Site.component";
+import Hero from "@/components/hero/Hero.component";
 
 export default function Home() {
   return (

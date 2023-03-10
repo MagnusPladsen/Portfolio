@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       header: ["Oswald", "sans-serif"],
+      text: ['Share Tech Mono', "monospace"],
     },
   },
   plugins: [],

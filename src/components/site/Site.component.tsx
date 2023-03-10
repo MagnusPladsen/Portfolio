@@ -1,8 +1,8 @@
-import React from "react";
 import { Site } from "@/models/sites";
-import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import SiteHeader from "./SiteHeader.component";
+import SiteStack from "./SiteStack.component";
 
 export default function SiteComponent({ site }: { site: Site }) {
   return (
@@ -19,27 +19,15 @@ export default function SiteComponent({ site }: { site: Site }) {
     >
       <div
         key={site.name}
-        className="font-header tracking-wider flex flex-col gap-2 text-white"
+        className="font-text tracking-wider flex flex-col gap-2 text-white"
       >
-        <Link target="_blank" href={site.url}>
-          <h2 className="pb-4 text-xl font-bold ">{site.name}</h2>
-          <Image
-            src={site.image}
-            alt={site.name}
-            width={500}
-            height={500}
-            className="rounded"
-          />{" "}
-        </Link>
-        <div className=" flex gap-3">
-          <p className="text-sm text-gray-500">Stack:</p>
-          {site.stack.map((tag) => (
-            <p key={tag} className="text-sm text-gray-500">
-              {tag}
-            </p>
-          ))}
+        <SiteHeader url={site.url} name={site.name} image={site.image} />
+        <SiteStack stack={site.stack} />
+        <div className="flex gap-3">
+          <p className="text-white ">Description: </p>
+          <p className="text-gray-500 group-hover:text-white transition-all">{site.description}</p>
         </div>
-        <p className="">{site.description}</p>
+
         <div className="flex justify-between pt-4">
           <Link target="_blank" href={site.url}>
             <motion.p
