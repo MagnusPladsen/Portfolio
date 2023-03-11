@@ -6,7 +6,7 @@ export default function SiteStack({ stack }: { stack: string[] }) {
       <p className="text-sm text-white">Stack:</p>
       <div className="flex gap-3">
         {stack.map((tag) => (
-          <div key={tag} className="flex text-gray-500 text-sm ">
+          <div key={tag} className="flex text-gray-600 text-sm ">
             <p className="group-hover:underline group-hover:text-white underline-offset-2 transition-all">
               {tag}
             </p>

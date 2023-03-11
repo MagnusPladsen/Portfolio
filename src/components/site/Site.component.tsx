@@ -25,7 +25,7 @@ export default function SiteComponent({ site }: { site: Site }) {
         <SiteStack stack={site.stack} />
         <div className="flex gap-3">
           <p className="text-white ">Description: </p>
-          <p className="text-gray-500 group-hover:text-white transition-all">{site.description}</p>
+          <p className="text-gray-600 group-hover:text-white transition-all">{site.description}</p>
         </div>
 
         <div className="flex justify-between pt-4">
