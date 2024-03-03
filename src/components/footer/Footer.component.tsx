@@ -3,7 +3,7 @@ import FooterIconLink from "./FooterIconLink.component";
 
 export default function Footer() {
   return (
-    <footer className="w-full fixed bg-black bottom-0 py-5">
+    <footer className="w-full fixed bg-gray-900 shadow-md bottom-0 py-5 border-t border-gray-600">
       <div className="flex flex-col  items-center gap-5 justify-center w-[500px] mx-auto">
         <div className="flex gap-10">
           <FooterIconLink
@@ -22,7 +22,7 @@ export default function Footer() {
             alt="House Icon"
           />
         </div>
-        <p className="text-white">&copy; Magnus Pladsen 2023</p>
+        <p className="text-white">&copy; Magnus Pladsen 2024</p>
       </div>
     </footer>
   );
